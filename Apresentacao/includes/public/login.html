@@ -1,0 +1,86 @@
+<section class="login">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <img class="img-circle" id="img_logo" src="assets/img/logoPreto.png">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+                </button>
+            </div>
+
+            <!-- Begin # DIV Form -->
+            <div id="div-forms">
+                <!-- Begin # Login Form -->
+                <form name="formCadastro">
+                    <div class="modal-body">
+                        <div id="div-login-msg">
+                            <div id="icon-login-msg" class="glyphicon glyphicon-chevron-right"></div>
+                            <span id="text-login-msg">Digite seu e-mail e senha</span>
+                        </div>
+                        <input ng-model="login.usuario" class="form-control" type="email" placeholder="E-mail" ng-required="true">
+                        <input ng-model="login.senha" class="form-control" type="password" placeholder="Senha" ng-required="true">
+                    </div>
+                    <div class="modal-footer">
+                        <div>
+                            <button ng-click="logar(login)" ng-disabled="formCadastro.$invalid" class="btn btn-success btn-lg btn-block">Login</button>
+                        </div>
+                        <div>
+                            <button id="login_lost_btn" type="button" class="btn btn-link">Esqueceu a senha?</button>
+                            <button id="login_register_btn" type="button" class="btn btn-link">Registrar</button>
+                        </div>
+                    </div>
+                </form>
+                <!-- End # Login Form -->
+
+                <!-- Begin | Lost Password Form -->
+                <form id="lost-form" style="display:none;">
+                    <div class="modal-body">
+                        <div id="div-lost-msg">
+                            <div id="icon-lost-msg" class="glyphicon glyphicon-chevron-right"></div>
+                            <span id="text-lost-msg">Digite seu e-mail.</span>
+                        </div>
+                        <input id="lost_email" class="form-control" type="text" placeholder="E-Mail" required>
+                    </div>
+                    <div class="modal-footer">
+                        <div>
+                            <button type="submit" class="btn btn-primary btn-lg btn-block">Enviar</button>
+                        </div>
+                        <div>
+                            <button id="lost_login_btn" type="button" class="btn btn-link">Entrar</button>
+                            <button id="lost_register_btn" type="button" class="btn btn-link">Registrar</button>
+                        </div>
+                    </div>
+                </form>
+                <!-- End | Lost Password Form -->
+
+                <!-- Begin | Register Form -->
+                <form id="register-form" style="display:none;">
+                    <div class="modal-body">
+                        <div id="div-register-msg">
+                            <div id="icon-register-msg" class="glyphicon glyphicon-chevron-right"></div>
+                            <span id="text-register-msg">Cadastre-se</span>
+                        </div>
+                        <input id="register_username" class="form-control" type="text" placeholder="Usuario" required>
+                        <input id="register_email" class="form-control" type="text" placeholder="E-Mail" required>
+                        <input id="register_password" class="form-control" type="password" placeholder="Senha" required>
+                    </div>
+                    <div class="modal-footer">
+                        <div>
+                            <button type="submit" class="btn btn-primary btn-lg btn-block">Registrar</button>
+                        </div>
+                        <div>
+                            <button id="register_login_btn" type="button" class="btn btn-link">Entrar</button>
+                            <button id="register_lost_btn" type="button" class="btn btn-link">Esqueceu sua senha?</button>
+                        </div>
+                    </div>
+                </form>
+                <!-- End | Register Form -->
+
+            </div>
+            <!-- End # DIV Form -->
+
+        </div>
+    </div>
+    <!-- END # MODAL LOGIN -->
+</section>
+<script src="assets/js/Jquery/login.js"></script>

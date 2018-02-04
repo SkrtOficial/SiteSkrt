@@ -1,0 +1,29 @@
+{
+  "name": "Modular",
+  "homepage": "https://github.com/MrSlyte/modular",
+  "authors": [
+    "Leonardo Rocha <leonardo-r-castellano@outlook.com>"
+  ],
+  "description": "Camada de apresentação do projeto Modular",
+  "main": "index.html",
+  "keywords": [
+    "modular"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "Library",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.6.4",
+    "angular-route": "1.6.4",
+    "jquery": "^3.2.1",
+    "bootstrap": "v4.0.0-alpha.6",
+    "owl.carousel": "^2.2.1",
+    "animate.css": "^3.5.2"
+  }
+}

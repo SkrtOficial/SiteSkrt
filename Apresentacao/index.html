@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html ng-app="skrt">
+    <head>
+        <meta charset="UTF-8">
+        <title>Skrt - Loja do autismo</title>
+        <link rel="stylesheet" href="Library/tether/dist/css/tether.min.css"/>
+        <link rel="stylesheet" href="Library/bootstrap/dist/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="Library/owl.carousel/dist/assets/owl.carousel.min.css"/>
+        <link rel="stylesheet" href="assets/css/style.css"/>
+        <link rel="stylesheet" href="assets/css/styleLogin.css"/>
+    </head>
+    <body ng-controller="skrtCtrl">
+        <!--<div class="se-pre-con"></div>-->
+            <header>
+                <nav>
+                    <div id="nav-container">
+                        <ul>
+                            <li class="nav-li active-nav"><a href="#/">Home</a></li>
+                            <li class="nav-li"><a href="#/products">Produtos</a></li>
+                            <li class="nav-li"><a href="#/login">Login</a></li>
+                            <li class="nav-li"><a href="">Contato</a></li>
+                            <li class="nav-li"><a href="">Área do Cliente</a></li>
+                        </ul>
+                        <div id="line"></div>
+                    </div>
+                </nav>
+            </header>
+            <main ng-view>
+
+            </main>
+            <footer>
+
+            </footer>
+
+        <!--LIBRARIES-->
+        <script src="Library/jquery/dist/jquery.min.js"></script>
+        <script src="Library/tether/dist/js/tether.min.js"></script>
+        <script src="Library/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="Library/owl.carousel/dist/owl.carousel.min.js"></script>
+
+        <script src="Library/angular/angular.min.js"></script>
+        <script src="Library/angular-route/angular-route.min.js"></script>
+        <!--BEGIN JQUERY-->
+        <script src="assets/js/Jquery/function.js"></script>
+        <!--END JQUERY-->
+        <!--BEGIN ANGULAR-->
+        <!--ESSENTIALS-->
+        <script src="assets/js/Angular/Essentials/app.js"></script>
+        <script src="assets/js/Angular/Essentials/routeConfig.js"></script>
+
+        <!--CONTROLLERS-->
+        <Script src="assets/js/Angular/Controllers/skrtController.js"></script>
+        <Script src="assets/js/Angular/Controllers/loginController.js"></script>
+        <Script src="assets/js/Angular/Controllers/productController.js"></script>
+        <!--SERVICES-->
+        <Script src="assets/js/Angular/Services/skrtService.js"></script>
+        <!--END ANGULAR-->
+    </body>
+</html>
